@@ -1,13 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(200, 206, 211);
+}
+.section-center {
+    padding: 1rem;
+    width: 700px;
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: rgb(212, 223, 233);
+    margin-top: 4rem;
+    transition: all .3s ease;
+}
+.section-center:hover {
+    box-shadow: 0px 12px 10px rgba(0,0,0,0.2);
+}
+.title {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+.title h3 {
+    margin-bottom: 0;
+}
+.underline {
+    text-align: center;
+    width: 5rem;
+    height: 3px;
+    background-color: red;
+    margin: 0 auto;
+}
+.todo-form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    height: 4rem;
+    align-items: center;
+}
+.form-control {
+    flex: 1;
+}
+.todo-input {
+    width: 100%;
+    padding: 1rem;
+    background: transparent;
+    outline: none;
+    border: 1px solid rgb(97, 160, 139);
+}
+.submit-btn {
+    padding: 0.9rem;
+    text-transform: capitalize;
+    outline: none;
+}
+.submit-btn:hover {
+    color: white;
+    background: rgb(97, 160, 139);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.alert {
+    text-align: center;
+    padding: 0.3rem;
+    text-transform: capitalize;
+    margin-bottom: 1px;
+}
+.alert-danger {
+    background: red;
+}
+.alert-success {
+    background: green;
+    color: white;
+}
+.todo {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 10px;
+    margin: 0.5rem 0;
+    background-color: blanchedalmond;
+}
+.todo-title {
+    flex: 1;
+    font-size: 1.2rem;
+    color: rgb(69, 16, 214);
+    text-transform: capitalize;
+    padding-left: 2.5rem;
+}
+.btn-container button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.edit-btn {
+    color: green;
+    margin-right: 0.6rem;
+}
+.delete-btn {
+    color: red;
+}
+.edit-btn, .delete-btn {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+.clear-items {
+    color: red;
+    background-color: transparent;
+    border: none;
+    transition: all .3s ease-in;
+    font-size: 1.2rem;
+    display: block;
+    margin: 0 auto;
+    padding: 5px;
+    text-transform: capitalize;
+}
+.clear-items:hover {
+    background: rgb(109, 16, 16);
+    color: white;
 }
